@@ -1,20 +1,66 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Open3D - The 3D Team
 
-# Run and deploy your AI Studio app
+A stunning, experimental landing page for NIT Agartala's 3D Team featuring WebGL shaders, interactive animations, and modern glassmorphism design.
 
-This contains everything you need to run your app locally.
+![Hero Section](https://img.shields.io/badge/React-18-blue) ![Vite](https://img.shields.io/badge/Vite-5-purple) ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)
 
-View your app in AI Studio: https://ai.studio/apps/drive/1lwy2khXjIwGLy-vUOSZVPlNjFUz0drII
+## ✨ Features
 
-## Run Locally
+### 🎨 Visual Effects
+- **WebGL PulsingBorder Shader** - Animated glowing border effect using `@paper-design/shaders-react`
+- **Glassmorphism Cards** - Modern frosted glass aesthetic throughout
+- **Dynamic Gradients** - Colorful gradient meshes and accent colors
 
-**Prerequisites:**  Node.js
+### 🎭 Interactive Elements
+- **Typewriter Animation** - Rotating hero text with typing effect
+- **Flip Cards** - Hover to reveal detailed information on Hackathons and Clubs
+- **Scroll Animations** - Framer Motion powered scroll-triggered card stacking in Hackathons section
+- **Infinite Marquee** - Auto-scrolling clubs showcase
 
+### 📍 Sections
+| Section | Description |
+|---------|-------------|
+| **Hero** | Eye-catching typewriter headline with CTA |
+| **Hackathons** | 5 hackathon cards with scroll-merge animation |
+| **Clubs** | 13+ club cards in infinite marquee |
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### ⚡ Performance Optimizations
+- Single global shader instance (reduced from 3)
+- GPU-accelerated animations with `will-change`
+- Removed expensive `backdrop-blur` in favor of solid backgrounds
+- Reduced shader intensity for smoother performance
+
+## 🚀 Getting Started
+
+```bash
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+
+# Build for production
+npm run build
+```
+
+## 🛠️ Tech Stack
+- **React 18** + TypeScript
+- **Vite** - Fast build tool
+- **Framer Motion** - Animations
+- **TailwindCSS** - Styling
+- **@paper-design/shaders-react** - WebGL shaders
+
+## 📁 Project Structure
+```
+├── App.tsx              # Main app with all sections
+├── components/
+│   ├── Navigation.tsx   # Anchor navigation
+│   ├── Typewriter.tsx   # Typing animation
+│   ├── Hackathons.tsx   # Scroll-animated cards
+│   ├── Clubs.tsx        # Marquee with flip cards
+│   ├── ShaderBackground.tsx  # WebGL pulsing border
+│   └── CrazyToggle.tsx  # Easter egg toggle
+```
+
+## 📄 License
+MIT License - Built with ❤️ by The 3D Team, NIT Agartala
